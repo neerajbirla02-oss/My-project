@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ✅ Top Navbar */
+.top-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px;
+  background: white;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+/* Logo */
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+}
+.logo-text .my {
+  color: #e71a3f;
+}
+
+/* Search Box */
+.search-box {
+  flex: 1;
+  margin: 0 40px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+/* Right Menu */
+.right-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.location span {
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+}
+
+.sign-in {
+  background-color: #e71a3f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sign-in:hover {
+  background-color: #cf1537;
+}
+
+.menu-icon {
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* ✅ Bottom Navbar */
+.bottom-navbar {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.bottom-navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.bottom-navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.bottom-navbar a:hover {
+  color: #e71a3f;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .top-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .search-box {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .bottom-navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .bottom-navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+
+
+.carousel-inner img {
+  width: 100%;            /* full screen width */
+  height: 80vh;           /* adjust as needed */
+  object-fit: contain;    /* show full image without cutting */
+  background-color: #000; /* adds black background for empty space */
+  border-radius: 10px;    /* optional smooth edges */
+}
+
